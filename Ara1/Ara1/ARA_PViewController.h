@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MobileCoreServices/UTCoreTypes.h>
+#import <CoreMotion/CoreMotion.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ARA_PViewController : UIViewController
+
+- (BOOL) isVideoCameraAvailable;
+- (BOOL) isGyroscopeAvailable;
 
 @end

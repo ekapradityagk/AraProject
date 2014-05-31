@@ -21,6 +21,10 @@
 		B675BE6819399CDB00414D8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B675BE4A19399CDB00414D8C /* UIKit.framework */; };
 		B675BE7019399CDB00414D8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B675BE6E19399CDB00414D8C /* InfoPlist.strings */; };
 		B675BE7219399CDB00414D8C /* Ara1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B675BE7119399CDB00414D8C /* Ara1Tests.m */; };
+		B6BF3CA61939F6EA00768063 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BF3CA51939F6EA00768063 /* CoreLocation.framework */; };
+		B6BF3CA81939F6FB00768063 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BF3CA71939F6FB00768063 /* AVFoundation.framework */; };
+		B6BF3CAA1939FBD400768063 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BF3CA91939FBD400768063 /* MobileCoreServices.framework */; };
+		B6BF3CAC193A2B5C00768063 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BF3CAB193A2B5C00768063 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		B675BE6D19399CDB00414D8C /* Ara1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ara1Tests-Info.plist"; sourceTree = "<group>"; };
 		B675BE6F19399CDB00414D8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B675BE7119399CDB00414D8C /* Ara1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ara1Tests.m; sourceTree = "<group>"; };
+		B6BF3CA51939F6EA00768063 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B6BF3CA71939F6FB00768063 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B6BF3CA91939FBD400768063 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B6BF3CAB193A2B5C00768063 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6BF3CAC193A2B5C00768063 /* CoreMotion.framework in Frameworks */,
+				B6BF3CAA1939FBD400768063 /* MobileCoreServices.framework in Frameworks */,
+				B6BF3CA81939F6FB00768063 /* AVFoundation.framework in Frameworks */,
+				B6BF3CA61939F6EA00768063 /* CoreLocation.framework in Frameworks */,
 				B675BE4919399CDB00414D8C /* CoreGraphics.framework in Frameworks */,
 				B675BE4B19399CDB00414D8C /* UIKit.framework in Frameworks */,
 				B675BE4719399CDB00414D8C /* Foundation.framework in Frameworks */,
@@ -101,6 +113,10 @@
 		B675BE4519399CDB00414D8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6BF3CAB193A2B5C00768063 /* CoreMotion.framework */,
+				B6BF3CA91939FBD400768063 /* MobileCoreServices.framework */,
+				B6BF3CA71939F6FB00768063 /* AVFoundation.framework */,
+				B6BF3CA51939F6EA00768063 /* CoreLocation.framework */,
 				B675BE4619399CDB00414D8C /* Foundation.framework */,
 				B675BE4819399CDB00414D8C /* CoreGraphics.framework */,
 				B675BE4A19399CDB00414D8C /* UIKit.framework */,
@@ -457,6 +473,7 @@
 				B675BE7719399CDB00414D8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B675BE7819399CDB00414D8C /* Build configuration list for PBXNativeTarget "Ara1Tests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +482,7 @@
 				B675BE7A19399CDB00414D8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
