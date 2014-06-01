@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6BAEF29193A429E0035F7C5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BAEF28193A429E0035F7C5 /* CoreLocation.framework */; };
 		B6BF3CBA193A342700768063 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BF3CB9193A342700768063 /* Foundation.framework */; };
 		B6BF3CBC193A342700768063 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BF3CBB193A342700768063 /* CoreGraphics.framework */; };
 		B6BF3CBE193A342700768063 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BF3CBD193A342700768063 /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B6BAEF28193A429E0035F7C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B6BF3CB6193A342700768063 /* TabbedARA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbedARA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BF3CB9193A342700768063 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6BF3CBB193A342700768063 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6BAEF29193A429E0035F7C5 /* CoreLocation.framework in Frameworks */,
 				B6BF3CBC193A342700768063 /* CoreGraphics.framework in Frameworks */,
 				B6BF3CBE193A342700768063 /* UIKit.framework in Frameworks */,
 				B6BF3CBA193A342700768063 /* Foundation.framework in Frameworks */,
@@ -104,6 +107,7 @@
 		B6BF3CB8193A342700768063 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6BAEF28193A429E0035F7C5 /* CoreLocation.framework */,
 				B6BF3CB9193A342700768063 /* Foundation.framework */,
 				B6BF3CBB193A342700768063 /* CoreGraphics.framework */,
 				B6BF3CBD193A342700768063 /* UIKit.framework */,
@@ -463,6 +467,7 @@
 				B6BF3CED193A342800768063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6BF3CEE193A342800768063 /* Build configuration list for PBXNativeTarget "TabbedARATests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +476,7 @@
 				B6BF3CF0193A342800768063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

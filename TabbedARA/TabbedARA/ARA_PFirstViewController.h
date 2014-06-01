@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ARA_PFirstViewController : UIViewController
+@interface ARA_PFirstViewController : UIViewController <CLLocationManagerDelegate>
+
+@property (nonatomic,retain) IBOutlet UITextView *locationTextView;
+@property (strong,nonatomic) CLLocationManager *locationManager;
+@property (strong,nonatomic) CLLocation *startLocation;
+
+
+-(void)startStandarUpdates;
+
+
 
 @end

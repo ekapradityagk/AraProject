@@ -26,23 +26,9 @@
 	<true/>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-	<key>UIStatusBarTintParameters</key>
-	<dict>
-		<key>UINavigationBar</key>
-		<dict>
-			<key>Style</key>
-			<string>UIBarStyleDefault</string>
-			<key>Translucent</key>
-			<false/>
-		</dict>
-	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
-		<string>gps</string>
-		<string>magnetometer</string>
-		<string>location-services</string>
-		<string>gyroscope</string>
-		<string>accelerometer</string>
+		<string>armv7</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

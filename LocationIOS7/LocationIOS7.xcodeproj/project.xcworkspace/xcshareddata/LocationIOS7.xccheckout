@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CFC93807-4308-4F6E-8567-0E8B4A10DADF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LocationIOS7</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9A591AFF-757C-45AC-A064-32D4B07550BA</key>
+		<string>https://github.com/ekapradityagk/AraProject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LocationIOS7/LocationIOS7.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9A591AFF-757C-45AC-A064-32D4B07550BA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ekapradityagk/AraProject.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9A591AFF-757C-45AC-A064-32D4B07550BA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9A591AFF-757C-45AC-A064-32D4B07550BA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AraProject</string>
+		</dict>
+	</array>
+</dict>
+</plist>
