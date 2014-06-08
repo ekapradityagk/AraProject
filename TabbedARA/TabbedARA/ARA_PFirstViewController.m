@@ -13,13 +13,12 @@
 @end
 
 @implementation ARA_PFirstViewController
-@synthesize locationTextView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self startStandarUpdates];
+    [self startSignificantChangeUpdates];
     
 }
 
@@ -33,11 +32,14 @@
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation
 {
+    NSLog(@"masuk ga sih");
     NSDate *eventDate = newLocation.timestamp;
-    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
-    if (abs(howRecent)<15.0) {
-        locationTextView.text = [NSString stringWithFormat:@"Latitude is %+.6f\n Longitude is %+.6f", newLocation.coordinate.latitude, newLocation.coordinate.longitude];
-    }
+    //NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
+    //if (abs(howRecent)<15.0) {
+      //  NSLog(@"kayaknya ga masuk kesini");
+        NSString *locationNow = [NSString stringWithFormat:@"Latitude is %+.6f\n Longitude is %+.6f", newLocation.coordinate.latitude, newLocation.coordinate.longitude];
+        _locationTextView.text = locationNow;
+    //}
 }
 
 - (void)startStandarUpdates
@@ -50,9 +52,17 @@
     _startLocation = nil;
 }
 
+- (void)startSignificantChangeUpdates
+{
+    _locationManager = [[CLLocationManager alloc]init];
+    _locationManager.delegate = self;
+    [_locationManager startMonitoringSignificantLocationChanges];
+    _startLocation = nil;
+}
+
 - (void)dealloc
 {
-    locationTextView = nil;
+    _locationTextView = nil;
 }
 
 @end

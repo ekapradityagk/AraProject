@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0BS-UR-iTC" kind="relationship" relationship="viewControllers" id="BRE-G6-XFt"/>
+                        <segue destination="7Wf-Of-U8t" kind="relationship" relationship="viewControllers" id="Shn-ZV-IUL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2163" y="977"/>
+        </scene>
+        <!--Video View Controller - Item-->
+        <scene sceneID="Raj-aD-I27">
+            <objects>
+                <viewController id="7Wf-Of-U8t" customClass="videoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d4q-Wh-oka"/>
+                        <viewControllerLayoutGuide type="bottom" id="l7Q-SW-vSq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="top" id="26i-Cr-j91">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbq-Rz-eSf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="189" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="captureScreen:" destination="7Wf-Of-U8t" eventType="touchUpInside" id="eCM-1e-LCy"/>
+                                </connections>
+                            </button>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyh-bB-v6S">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="91" y="0.0" width="229" height="307"/>
+                                </variation>
+                            </view>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QVf-PO-7hh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="240" width="132" height="186"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Bbq-Rz-eSf"/>
+                                <exclude reference="fyh-bB-v6S"/>
+                                <exclude reference="QVf-PO-7hh"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Bbq-Rz-eSf"/>
+                                <include reference="fyh-bB-v6S"/>
+                                <include reference="QVf-PO-7hh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="aaC-bd-3TH"/>
+                    <connections>
+                        <outlet property="videoImage" destination="QVf-PO-7hh" id="xPI-bR-tvK"/>
+                        <outlet property="videoPreview" destination="fyh-bB-v6S" id="Hfm-ME-5Qc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9FL-Y5-mIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3025.5" y="1524"/>
+        </scene>
+        <!--Photo View Controller - Item-->
+        <scene sceneID="q1g-iS-MJ5">
+            <objects>
+                <viewController id="0BS-UR-iTC" customClass="photoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uUc-Nk-wp4"/>
+                        <viewControllerLayoutGuide type="bottom" id="D2c-Oz-j5x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XNh-TF-0U8">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWU-eY-Hgw">
+                                <rect key="frame" x="168" y="107" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="137" y="225" width="46" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="163" y="121" width="46" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="218" y="76" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="loadPhotoPicker:" destination="0BS-UR-iTC" eventType="touchUpInside" id="oU9-ze-ZSt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="nWU-eY-Hgw"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="nWU-eY-Hgw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="C1k-MD-Iuz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jr4-SD-29d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3025.5" y="971"/>
+        </scene>
+    </scenes>
+</document>

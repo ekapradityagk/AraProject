@@ -11,12 +11,14 @@
 
 @interface ARA_PFirstViewController : UIViewController <CLLocationManagerDelegate>
 
-@property (nonatomic,retain) IBOutlet UITextView *locationTextView;
+
+@property (nonatomic,strong) IBOutlet UITextView *locationTextView;
 @property (strong,nonatomic) CLLocationManager *locationManager;
 @property (strong,nonatomic) CLLocation *startLocation;
 
 
 -(void)startStandarUpdates;
+-(void)startSignificantChangeUpdates;
 
 
 

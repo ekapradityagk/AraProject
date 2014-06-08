@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "MapAnnotation.h"
 
-@interface ARA_PSecondViewController : UIViewController
+@interface ARA_PSecondViewController : UIViewController <MKReverseGeocoderDelegate>
+
+@property (nonatomic, retain)IBOutlet MKMapView *mapView;
+@property (nonatomic, retain)IBOutlet UISegmentedControl *buttonSegmentedControl;
+@property CLLocationCoordinate2D coords;
 
 @end

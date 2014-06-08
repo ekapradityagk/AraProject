@@ -23,6 +23,8 @@
 		B6BF3CDE193A342800768063 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BF3CBD193A342700768063 /* UIKit.framework */; };
 		B6BF3CE6193A342800768063 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6BF3CE4193A342800768063 /* InfoPlist.strings */; };
 		B6BF3CE8193A342800768063 /* TabbedARATests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BF3CE7193A342800768063 /* TabbedARATests.m */; };
+		B6C4FF28193CCB7200ACB0C1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C4FF27193CCB7100ACB0C1 /* MapKit.framework */; };
+		B6C4FF2B193CDD1B00ACB0C1 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C4FF2A193CDD1B00ACB0C1 /* MapAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		B6BF3CE3193A342800768063 /* TabbedARATests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabbedARATests-Info.plist"; sourceTree = "<group>"; };
 		B6BF3CE5193A342800768063 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6BF3CE7193A342800768063 /* TabbedARATests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbedARATests.m; sourceTree = "<group>"; };
+		B6C4FF27193CCB7100ACB0C1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B6C4FF29193CDD1B00ACB0C1 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		B6C4FF2A193CDD1B00ACB0C1 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C4FF28193CCB7200ACB0C1 /* MapKit.framework in Frameworks */,
 				B6BAEF29193A429E0035F7C5 /* CoreLocation.framework in Frameworks */,
 				B6BF3CBC193A342700768063 /* CoreGraphics.framework in Frameworks */,
 				B6BF3CBE193A342700768063 /* UIKit.framework in Frameworks */,
@@ -88,6 +94,8 @@
 		B6BF3CAD193A342700768063 = {
 			isa = PBXGroup;
 			children = (
+				B6C4FF29193CDD1B00ACB0C1 /* MapAnnotation.h */,
+				B6C4FF2A193CDD1B00ACB0C1 /* MapAnnotation.m */,
 				B6BF3CBF193A342700768063 /* TabbedARA */,
 				B6BF3CE1193A342800768063 /* TabbedARATests */,
 				B6BF3CB8193A342700768063 /* Frameworks */,
@@ -107,6 +115,7 @@
 		B6BF3CB8193A342700768063 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6C4FF27193CCB7100ACB0C1 /* MapKit.framework */,
 				B6BAEF28193A429E0035F7C5 /* CoreLocation.framework */,
 				B6BF3CB9193A342700768063 /* Foundation.framework */,
 				B6BF3CBB193A342700768063 /* CoreGraphics.framework */,
@@ -263,6 +272,7 @@
 				B6BF3CCA193A342700768063 /* ARA_PAppDelegate.m in Sources */,
 				B6BF3CC6193A342700768063 /* main.m in Sources */,
 				B6BF3CD0193A342700768063 /* ARA_PFirstViewController.m in Sources */,
+				B6C4FF2B193CDD1B00ACB0C1 /* MapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
